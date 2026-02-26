@@ -125,6 +125,7 @@ const Court = () => {
           </div>
 
           <div className="slot-summary">
+            <div className="summary-body-container">
 
             <div className="summary-header">
               <h4>Reservation Summary</h4>
@@ -193,8 +194,9 @@ const Court = () => {
               </div>
 
             </div>
-
+            </div>
           </div>
+          
         </div>
         
       </div>

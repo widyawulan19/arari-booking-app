@@ -8,12 +8,32 @@ import padelImg from '../assets/padel-card.jpeg'
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { FiAlertCircle } from "react-icons/fi";
 import { IoCalendarClear, IoClose, IoCloseCircle, IoCloseCircleOutline, IoCloseOutline, IoFlash } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Court from "../pages/users/Court";
 
 const CourtPreviewModal = ({ open, onClose, courts,date, sportName }) => {
 
   const navigate = useNavigate();
+
+    useEffect(() => {
+      const cards = document.querySelectorAll(".court-item");
+
+      const observer = new IntersectionObserver(
+          (entries) => {
+          entries.forEach((entry) => {
+              if(entry.isIntersecting){
+              entry.target.classList.add("active");
+              }
+          });
+          },
+          {
+          threshold: 0.25,
+          }
+      );
+
+      cards.forEach((card) => observer.observe(card));
+    }, []);
+    
 
     // console.log("SPORT NAME FROM HERO:", sportName);
     // console.log("Data courts dari hero:", courts)
@@ -48,7 +68,8 @@ const CourtPreviewModal = ({ open, onClose, courts,date, sportName }) => {
     }
   });
 };
-  
+
+
 
   return (
     <div className="modal-overlay">

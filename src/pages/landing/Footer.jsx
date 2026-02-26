@@ -11,7 +11,6 @@ const Footer = () => {
         {/* Left */}
         <div className="footer-left">
           <div className="logo">
-            {/* <div className="logo-box"></div> */}
             <div>
                 <img src={logo} alt="" />
             </div>

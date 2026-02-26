@@ -136,8 +136,7 @@ INFO RIGHT
 SLOT BODY
 ======================= */
 .slot-body {
-    /* border: 1px solid red; */
-    height: 65vh;
+    height: 80%;
     width: 100%;
     gap: 10px;
     overflow-y: auto;
@@ -151,13 +150,12 @@ SLOT BODY
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid green; */
     height: 100%;
+
     gap: 20px;
 }
 
 .slot-grid {
-    /* border: 1px solid blue; */
     width: 100%;
     height: 100%;
     display: grid;
@@ -169,7 +167,7 @@ SLOT BODY
     background: var(--divider);
     border: 1px solid var(--border-soft);
     border-radius: 16px;
-    padding: 5px 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,18 +231,27 @@ SUMMARY
 
 .slot-summary {
     /* border: 1px solid var(--divider); */
-    border: 1px solid var(--border-soft);
     border-radius: 16px;
     width: 40%;
     height: 100%;
 }
 
+.summary-body-container {
+    /* border: 1px solid var(--border-soft); */
+    /* border-radius: 16px; */
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .summary-header {
     padding: 20px 15px;
     background-color: var(--primary);
-    /* background-color: var(--divider); */
     width: 100%;
-    gap: 5px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom: 1px solid #ddd;
@@ -252,7 +259,6 @@ SUMMARY
 }
 
 .summary-header h4 {
-    /* color: var(--text-dark); */
     font-size: 18px;
     margin: 0px;
 }
@@ -263,13 +269,16 @@ SUMMARY
 }
 
 .summary-body {
-    /* border: 1px solid red; */
+    border-left: 1px solid var(--border-soft);
+    border-right: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--border-soft);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     /* padding-top: 5px; */
     padding: 10px 20px;
     height: 53vh;
     overflow-y: auto;
     width: 100%;
-    ;
 }
 
 .info {
@@ -408,4 +417,89 @@ SUBMIT
 .text-submit p {
     color: var(--text-secondary);
     font-size: 12px;
+}
+
+/* =======================
+MEDIA QUERY
+======================= */
+@media (max-width:1100px) {
+    .slot-body-left {
+        justify-content: flex-start !important;
+        width: 100%;
+    }
+
+    .slot-grid {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+
+    .slot-summary {
+        /* border: 1px solid orange; */
+        width: 50%;
+    }
+}
+
+@media (max-width:650px) {
+
+    .slot-box {
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .slot-body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        height: auto;
+        overflow: visible;
+        gap: 20px;
+        width: 100%;
+        /* border: 1px solid orange; */
+    }
+
+
+    .slot-body-left {
+        width: 100%;
+        padding: 10px 0;
+        height: auto;
+    }
+
+    .slot-grid {
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 30px;
+    }
+
+    .slot-card {
+        padding: 40px 10px;
+    }
+
+    .slot-card h4 {
+        font-size: 18px;
+    }
+
+    .slot-card span {
+        font-size: 14px;
+    }
+
+    .slot-summary {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .summary-body-container {
+        width: 80%;
+    }
+
+    /* navbar */
+    .info-left span {
+        margin-right: 5px;
+        font-size: 10px;
+        gap: 3px;
+    }
 }

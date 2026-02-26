@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../styles/Landing/Highlights.css'
 import { GoVerified } from "react-icons/go";
 import { FiClock } from "react-icons/fi";
@@ -33,6 +33,26 @@ const highlightContent = [
 ]
 
 const HighlightsSection =()=> {
+
+    useEffect(() => {
+    const cards = document.querySelectorAll(".highlight-box");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+        entries.forEach((entry) => {
+            if(entry.isIntersecting){
+            entry.target.classList.add("active");
+            }
+        });
+        },
+        {
+        threshold: 0.25,
+        }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+    }, []);
+    
   return (
     <div className='highlight-container'>
         {highlightContent.map((item)=>(

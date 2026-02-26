@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../styles/Landing/SportPreview.css'
 import { IoChevronForward } from 'react-icons/io5'
 import { TfiLayoutLineSolid } from "react-icons/tfi";
@@ -32,6 +32,27 @@ const sportPreview = [
 ]
 
 function SportPreview() {
+
+    useEffect(() => {
+    const cards = document.querySelectorAll(".prev-card");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+        entries.forEach((entry) => {
+            if(entry.isIntersecting){
+            entry.target.classList.add("active");
+            }
+        });
+        },
+        {
+        threshold: 0.25,
+        }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+    }, []);
+
+    
   return (
     <div className="sport-preview-container">
         <header className='prev-header'>
