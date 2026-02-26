@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,71 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-main-white);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+:root {
+
+  /* ========== COLOR SYSTEM ========== */
+
+  /* Primary */
+  --primary: #2F544B;
+  --dollar-primary: #499553;
+  --primary-soft: #6F8F86;
+  --accent-burnt: #B85C38;
+  --accent-clay: #D07A3F;
+
+  /* Secondary */
+  --secondary: #DCCBB5;
+  --secondary-soft: #EFE4D6;
+
+  /* Text */
+  --text-light: #F4F4F2;
+  --text-dark: #243A34;
+
+  /* Status */
+  --available: #DCCBB5;
+  --selected: #6F8F86;
+  --booked: #C65D5D;
+
+  /* Background */
+  --bg-main: #2F544B;
+  --bg-card: #FFFFFF;
+  --bg-light: #fbfbfb;
+
+  /* Background light  */
+  --bg-main-white: #F7F8FA;
+  --bg-section-white: #FFFFFF;
+  --bg-hover-white: #F1F3F5;
+  --border-soft-white: #E6E8EB;
+  --text-primary: #1F2933;
+  --text-secondary: #6B7280;
+  --divider: #EEF0F2;
+
+  /* Border */
+  --border-soft: #E6E6E6;
+
+  /* Shadow */
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-primary: 0px 4px 8px #2f544b88;
+  --shadow-clay: 0px 4px 8px #d0793f98;
+
+
+  /* Radius */
+  --radius: 14px;
+
 }

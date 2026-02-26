@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "booking_id": 1,
+            "court_id": 1,
+            "booking_date": "2026-02-24",
+            "start_time": "18:00",
+            "end_time": "19:00",
+            "status": "confirmed"
+        },
+        {
+            "booking_id": 2,
+            "court_id": 2,
+            "booking_date": "2026-02-24",
+            "start_time": "19:00",
+            "end_time": "20:00",
+            "status": "confirmed"
+        }
+    ]
+}

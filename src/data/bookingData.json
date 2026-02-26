@@ -1,0 +1,206 @@
+[
+    {
+        "id": 1,
+        "name": "Bulutangkis",
+        "courts": [
+            {
+                "id": 1,
+                "sport_id": 1,
+                "name": "Court 1",
+                "is_active": true,
+                "descriptions": "Professional Synthetic",
+                "price_per_hour": 80000,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "id": 2,
+                "sport_id": 1,
+                "name": "Court 2",
+                "is_active": true,
+                "descriptions": "Professional Synthetic",
+                "price_per_hour": 80000,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "id": 3,
+                "sport_id": 1,
+                "name": "Court 3",
+                "is_active": true,
+                "descriptions": "Professional Synthetic",
+                "price_per_hour": 80000,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "id": 4,
+                "sport_id": 1,
+                "name": "Court 4",
+                "is_active": true,
+                "descriptions": "Professional Synthetic",
+                "price_per_hour": 80000,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "id": 5,
+                "sport_id": 1,
+                "name": "Court 5",
+                "is_active": true,
+                "descriptions": "Professional Synthetic",
+                "price_per_hour": 80000,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "id": 6,
+                "sport_id": 1,
+                "name": "Court 6",
+                "is_active": true,
+                "descriptions": "Professional Synthetic",
+                "price_per_hour": 80000,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            }
+        ],
+        "operating_hours": [
+            {
+                "day_of_week": 0,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "day_of_week": 1,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "day_of_week": 2,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "day_of_week": 3,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "day_of_week": 4,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "day_of_week": 5,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "day_of_week": 6,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            }
+        ],
+        "price_per_hour": 60000
+    },
+    {
+        "id": 2,
+        "name": "Tenis Indoor",
+        "courts": [
+            {
+                "id": 7,
+                "sport_id": 2,
+                "name": "Court 1",
+                "is_active": true,
+                "descriptions": "Professional Synthetic",
+                "price_per_hour": 100000,
+                "open_time": "08:00",
+                "close_time": "22:00",
+                "slot_duration": 60
+            },
+            {
+                "id": 8,
+                "sport_id": 2,
+                "name": "Court 2",
+                "is_active": true,
+                "descriptions": "Professional Synthetic",
+                "price_per_hour": 100000,
+                "open_time": "08:00",
+                "close_time": "22:00",
+                "slot_duration": 60
+            }
+        ],
+        "operating_hours": [
+            {
+                "day_of_week": 0,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "day_of_week": 1,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "day_of_week": 2,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "day_of_week": 3,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "day_of_week": 4,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "day_of_week": 5,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            },
+            {
+                "day_of_week": 6,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            }
+        ],
+        "price_per_hour": 250000
+    },
+    {
+        "id": 3,
+        "name": "Padel",
+        "courts": [],
+        "operating_hours": [
+            {
+                "day_of_week": 0,
+                "open_time": "08:00:00",
+                "close_time": "23:00:00",
+                "slot_duration": 60
+            }
+        ],
+        "price_per_hour": 150000
+    }
+]

@@ -1,0 +1,344 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-container {
+    height: 95%;
+    width: 60%;
+    min-width: 420px;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    animation: fadeIn 0.25s ease;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.modal-header h3 {
+    margin: 0px;
+}
+
+.close-modal {
+    font-size: 20px;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    box-shadow: var(--shadow-primary);
+}
+
+/* =======================
+SUB HEADER
+======================= */
+.modal-sub-header {
+    /* border: 1px solid blue; */
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.text {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text p {
+    padding: 0px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.text .date {
+    width: fit-content;
+    padding: 5px;
+    gap: 5px;
+    font-size: 12px;
+    /* font-weight: bold; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--primary);
+    color: var(--primary);
+    background: white;
+}
+
+.date p {
+    color: var(--primary);
+}
+
+/* =======================
+BODY
+======================= */
+
+.modal-body-box {
+    /* border: 1px solid blue; */
+    height: 72vh;
+    overflow-y: auto;
+}
+
+.modal-body {
+    display: grid;
+
+    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 10px;
+    padding: 10px;
+    /* border: 1px solid red; */
+    /* supaya layout tetap rapi */
+    align-items: stretch;
+}
+
+.court-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+    border: 1px solid var(--divider);
+    border-radius: 6px;
+    background-color: var(--bg-section-white);
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+.court-item:hover {
+    box-shadow: var(--shadow-soft);
+}
+
+.court-cover {
+    position: relative;
+    width: 100%;
+    /* padding: 5px; */
+}
+
+.court-item img {
+    width: 100% !important;
+    height: 100px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    /* border: 1px solid red; */
+}
+
+
+.status-on {
+    background-color: #16a34a;
+    border: 1px solid #16a34a;
+    border-radius: 12px;
+    color: white;
+    /* color: var(--text-dark); */
+    font-size: 10px;
+    font-weight: 600;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 3px 5px;
+    position: absolute;
+    margin: 5px;
+}
+
+.status-off {
+    background-color: #ef4444;
+    border: 1px solid #ef4444;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 3px 5px;
+    position: absolute;
+    margin: 5px;
+}
+
+.court-desc-cont {
+
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.court-desc {
+    width: 100%;
+    margin-bottom: 5px;
+    /* height: 80px; */
+    /* padding: 5px; */
+}
+
+.court-desc span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.court-desc p {
+    padding: 0px;
+    width: 100%;
+    font-size: 10px;
+    color: var(--text-secondary);
+}
+
+.wind-icon {
+    color: var(--primary);
+    font-size: 12px;
+}
+
+/* =======================
+COURT INFO
+======================= */
+.court-info-container {
+    border-bottom: 0.5px dashed var(--text-secondary);
+    border-top: 0.5px dashed var(--text-secondary);
+    width: 100%;
+    gap: 10px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.avail-box {
+    border-right: 1px solid var(--text-secondary);
+    padding: 5px 7px;
+    gap: 5px;
+}
+
+.avail-box h4 {
+    margin: 0px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.avail-box p {
+    color: var(--text-primary);
+    padding: 0px;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ava-icon {
+    font-size: 12px;
+    margin-right: 5px;
+    color: #16a34a;
+}
+
+/* =======================
+RATING
+======================= */
+.rating-box {
+    padding: 5px 7px;
+    gap: 5px;
+}
+
+.rating-box h4 {
+    margin: 0px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.rating-box p {
+    color: var(--text-primary);
+    padding: 0px;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rating-icon {
+    font-size: 12px;
+    margin-right: 5px;
+    color: var(--accent-clay);
+}
+
+/* =======================
+COURT BUTTON
+======================= */
+.court-button {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.court-button button {
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 15px;
+    width: 100%;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    color: var(--text-light);
+    background-color: var(--primary);
+}
+
+.court-button button:hover {
+    box-shadow: var(--shadow-primary)
+}
+
+/* =======================
+FOOTER
+======================= */
+.modal-footer {
+    margin-top: 10px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.modal-footer p {
+    padding: 0px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.login-btn {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    box-shadow: var(--shadow-primary);
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

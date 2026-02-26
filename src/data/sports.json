@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Badminton",
+            "description": "",
+            "img": "../assets/badminton-court.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Tennis",
+            "description": "",
+            "img": "../assets/padel-card.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Padel",
+            "description": "",
+            "img": "../assets/tenis-card.jpeg"
+        }
+    ]
+}

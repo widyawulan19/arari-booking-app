@@ -1,0 +1,411 @@
+.court-slot-container {
+    width: 100%;
+}
+
+.slot-box {
+    border-top: 1px solid var(--divider);
+    width: 100%;
+    height: 90vh;
+    padding: 30px;
+}
+
+.slot-nav {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* =======================
+NAV
+======================= */
+.slot-nav .nav {
+    /* border: 1px solid blue; */
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    padding: 5px;
+    gap: 8px;
+}
+
+.nav button {
+    width: fit-content;
+    /* padding: 5px; */
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-dark);
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--bg-main-white);
+}
+
+.nav button:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.nav h4 {
+    font-size: 24px;
+    margin: 0px;
+}
+
+/* =======================
+SLOT INFO
+======================= */
+.slot-info {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-left {
+    /* border: 1px solid red; */
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.info-left span {
+    margin-right: 20px;
+    font-size: 12px;
+    padding: 4px;
+    gap: 5px;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.info-left .info-icon {
+    font-size: 18px;
+    color: var(--primary);
+}
+
+/* =======================
+INFO RIGHT
+======================= */
+
+.info-right {
+    border: 1px solid var(--divider);
+    background-color: var(--divider);
+    border-radius: 8px;
+    /* width: 100%; */
+    padding: 5px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.info-right button {
+    border: none;
+    background-color: var(--divider);
+    padding: 5px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.available,
+.selected {
+    color: var(--primary-soft);
+}
+
+.booked {
+    color: var(--text-secondary);
+}
+
+/* =======================
+SLOT BODY
+======================= */
+.slot-body {
+    /* border: 1px solid red; */
+    height: 65vh;
+    width: 100%;
+    gap: 10px;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slot-body-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid green; */
+    height: 100%;
+    gap: 20px;
+}
+
+.slot-grid {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.slot-card {
+    background: var(--divider);
+    border: 1px solid var(--border-soft);
+    border-radius: 16px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.slot-card:hover {
+    box-shadow: var(--shadow-soft);
+    background: var(--primary);
+    color: white !important;
+}
+
+.slot-card.active {
+    box-shadow: var(--shadow-soft);
+    background: var(--primary);
+    color: white !important;
+}
+
+.slot-card span {
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--dollar-primary);
+}
+
+
+/* =======================
+BOOKED POLICY
+======================= */
+.booked-policy {
+    border: 1px solid var(--divider);
+    border-radius: 16px;
+    padding: 15px 10px;
+    /* gap: 10px; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: #c6e3db;
+}
+
+.booked-policy .policy-icon {
+    font-size: 20px;
+    color: var(--primary);
+    width: 10%;
+}
+
+.policy-text h4 {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.policy-text p {
+    padding: 0px;
+    font-size: 12px;
+}
+
+/* =======================
+SUMMARY
+======================= */
+
+.slot-summary {
+    /* border: 1px solid var(--divider); */
+    border: 1px solid var(--border-soft);
+    border-radius: 16px;
+    width: 40%;
+    height: 100%;
+}
+
+.summary-header {
+    padding: 20px 15px;
+    background-color: var(--primary);
+    /* background-color: var(--divider); */
+    width: 100%;
+    gap: 5px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: 1px solid #ddd;
+    color: white;
+}
+
+.summary-header h4 {
+    /* color: var(--text-dark); */
+    font-size: 18px;
+    margin: 0px;
+}
+
+.summary-header p {
+    padding: 0px;
+    font-size: 10px;
+}
+
+.summary-body {
+    /* border: 1px solid red; */
+    /* padding-top: 5px; */
+    padding: 10px 20px;
+    height: 53vh;
+    overflow-y: auto;
+    width: 100%;
+    ;
+}
+
+.info {
+    border-bottom: 1px dashed #ddd;
+    width: 100%;
+    padding-bottom: 10px;
+    margin: 15px 0px;
+}
+
+.info .sub-info {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.sub-info .title {
+    color: var(--text-secondary);
+    font-size: 12px;
+    padding: 0px;
+}
+
+.sub-info .value {
+    color: var(--text-dark);
+    padding: 0px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* =======================
+TOTAL VALUE
+======================= */
+.info .total-sub-info {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.total-sub-info .total-title {
+    color: var(--text-dark);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.total-sub-info .total-value {
+    color: var(--text-dark);
+    padding: 0px;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--primary);
+}
+
+.sub-info1 {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+
+.sub-info1 h4 {
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.sub-info1 .time-slot {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #c6e3db;
+    border-radius: 8px;
+    padding: 10px;
+    background: #c6e3db;
+}
+
+.time-slot p {
+    gap: 5px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not-selected {
+    font-size: 12px;
+}
+
+/* =======================
+SUBMIT 
+======================= */
+.info-submit {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-submit button {
+    font-weight: bold;
+    font-size: 16px;
+    background: var(--accent-clay);
+    border: 1px solid var(--accent-clay);
+    border-radius: 4px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.info-submit button:hover {
+    box-shadow: var(--shadow-clay);
+}
+
+.text-submit {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text-submit p {
+    color: var(--text-secondary);
+    font-size: 12px;
+}

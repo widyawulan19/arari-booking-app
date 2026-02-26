@@ -1,0 +1,102 @@
+src/
+│
+├─ api/
+│  ├─ axios.js
+│  ├─ auth.api.js
+│  ├─ sport.api.js
+│  ├─ courts.api.js
+│  ├─ availability.api.js
+│  ├─ booking.api.js
+│  └─ pricing.api.js
+│
+├─ components/
+│  ├─ ui/
+│  │   ├─ Button.jsx
+│  │   ├─ Input.jsx
+│  │   └─ Modal.jsx
+│  │
+│  ├─ booking/
+│  │   ├─ SlotCard.jsx
+│  │   ├─ CourtCard.jsx
+│  │   └─ BookingSummary.jsx
+│  │
+│  └─ layout/
+│      ├─ Navbar.jsx
+│      └─ Footer.jsx
+│
+├─ pages/
+│  ├─ Home/
+│  │   └─ Home.jsx
+│  │
+│  ├─ Sports/
+│  │   └─ Sports.jsx
+│  │
+│  ├─ Courts/
+│  │   ├─ CourtsList.jsx
+│  │   └─ CourtDetail.jsx
+│  │
+│  ├─ Booking/
+│  │   ├─ BookingPage.jsx
+│  │   ├─ CheckoutPage.jsx
+│  │   └─ MyBooking.jsx
+│  │
+│  ├─ Auth/
+│  │   ├─ Login.jsx
+│  │   └─ Register.jsx
+│
+├─ hooks/
+│  ├─ useAuth.js
+│  ├─ useBooking.js
+│  └─ useAvailability.js
+│
+├─ context/
+│  ├─ AuthContext.jsx
+│  └─ BookingContext.jsx
+│
+├─ utils/
+│  ├─ formatCurrency.js
+│  ├─ formatTime.js
+│  └─ dateHelper.js
+│
+├─ constants/
+│  └─ bookingStatus.js
+│
+├─ routes/
+│  └─ AppRoutes.jsx
+│
+├─ styles/
+│  └─ global.css
+│
+├─ App.jsx
+└─ main.jsx
+
+
+
+useEffect(() => {
+  const fetchData = async () => {
+    const data = await getSports();
+    console.log(data);
+  };
+
+  fetchData();
+}, []);
+
+LAYOUT REFERENSI 
+src/
+ ├─ layouts/
+ │   ├─ AdminLayout.jsx
+ │   └─ UserLayout.jsx
+ │
+ ├─ components/
+ │   ├─ Sidebar.jsx
+ │   └─ Navbar.jsx
+ │
+ ├─ pages/
+ │   ├─ admin/
+ │   │   ├─ Dashboard.jsx
+ │   │   └─ Booking.jsx
+ │   │
+ │   └─ user/
+ │       ├─ Home.jsx
+ │       ├─ Court.jsx
+ │       └─ Checkout.jsx

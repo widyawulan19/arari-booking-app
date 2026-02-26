@@ -1,0 +1,135 @@
+.navbar {
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* CONTAINER */
+.navbar-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 14px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+/* LEFT */
+.nav-left {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* CENTER */
+.nav-center img {
+    height: 42px;
+}
+
+/* RIGHT */
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+/* BUTTON */
+.btn-text {
+    text-decoration: none;
+    color: var(--text-primary);
+    padding: 8px 12px;
+}
+
+.btn-outline {
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: var(--text-primary);
+}
+
+.btn-primary {
+    text-decoration: none;
+    background: var(--primary);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 22px;
+    height: 2px;
+    background: var(--text-primary);
+    transition: 0.3s;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+    display: none;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .nav-left,
+    .btn-text,
+    .btn-outline,
+    .btn-primary {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar-container {
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .nav-center {
+        justify-self: center;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        border-top: 1px solid var(--border);
+        background: var(--bg);
+    }
+
+    .mobile-menu a {
+        text-decoration: none;
+        color: var(--text-primary);
+        font-weight: 500;
+    }
+
+    .mobile-booking {
+        background: var(--primary);
+        color: white !important;
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+    }
+}

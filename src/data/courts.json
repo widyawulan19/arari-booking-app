@@ -1,0 +1,84 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "sport_id": 1,
+            "name": "Court 1",
+            "is_active": true,
+            "descriptions": "Professional Synthetic",
+            "price_per_hour": 80000,
+            "open_time": "08:00",
+            "close_time": "22:00"
+        },
+        {
+            "id": 2,
+            "sport_id": 1,
+            "name": "Court 2",
+            "is_active": true,
+            "descriptions": "Professional Synthetic",
+            "price_per_hour": 80000,
+            "open_time": "08:00",
+            "close_time": "22:00"
+        },
+        {
+            "id": 3,
+            "sport_id": 1,
+            "name": "Court 3",
+            "is_active": true,
+            "descriptions": "Professional Synthetic",
+            "price_per_hour": 80000,
+            "open_time": "08:00",
+            "close_time": "22:00"
+        },
+        {
+            "id": 4,
+            "sport_id": 1,
+            "name": "Court 4",
+            "is_active": true,
+            "descriptions": "Professional Synthetic",
+            "price_per_hour": 80000,
+            "open_time": "08:00",
+            "close_time": "22:00"
+        },
+        {
+            "id": 5,
+            "sport_id": 1,
+            "name": "Court 5",
+            "is_active": true,
+            "descriptions": "Professional Synthetic",
+            "price_per_hour": 80000,
+            "open_time": "08:00",
+            "close_time": "22:00"
+        },
+        {
+            "id": 6,
+            "sport_id": 1,
+            "name": "Court 6",
+            "is_active": true,
+            "descriptions": "Professional Synthetic",
+            "price_per_hour": 80000,
+            "open_time": "08:00",
+            "close_time": "22:00"
+        },
+        {
+            "id": 7,
+            "sport_id": 2,
+            "name": "Court 1",
+            "is_active": true,
+            "descriptions": "Professional Synthetic",
+            "price_per_hour": 100000,
+            "open_time": "08:00",
+            "close_time": "22:00"
+        },
+        {
+            "id": 8,
+            "sport_id": 2,
+            "name": "Court 2",
+            "is_active": true,
+            "descriptions": "Professional Synthetic",
+            "price_per_hour": 100000,
+            "open_time": "08:00",
+            "close_time": "22:00"
+        }
+    ]
+}
