@@ -56,11 +56,9 @@ const Navbar = () => {
       {/* MOBILE MENU */}
       {menuOpen && (
         <div className="mobile-menu">
-          <Link to="/schedule">Jadwal</Link>
-          <Link to="/pricing">Harga</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/register">Daftar</Link>
-          <Link to="/courts" className="mobile-booking">Booking</Link>
+          <Link onClick={handleOpenPreviewModal}>Login</Link>
+          <Link onClick={handleOpenPreviewModal}>Join Member</Link>
+          <Link onClick={handleOpenPreviewModal} className="mobile-booking">Booking</Link>
         </div>
       )}
 
