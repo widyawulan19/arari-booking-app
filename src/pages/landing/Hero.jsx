@@ -20,7 +20,7 @@ const Hero = () => {
   const [openSportDropdown, setOpenSportDropdown] = useState(false);
 
   const [date, setDate] = useState(null);
-  const [status, setStatus] = useState(null);
+  const [status] = useState(null);
   const [courts, setCourts] = useState([]);
   const [openModal, setOpenModal] = useState(false);
 
