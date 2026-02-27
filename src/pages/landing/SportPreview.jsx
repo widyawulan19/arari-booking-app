@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../styles/Landing/SportPreview.css'
 import { IoChevronForward } from 'react-icons/io5'
 import { TfiLayoutLineSolid } from "react-icons/tfi";
 import badmintonPic from '../../assets/badminton-card.jpeg'
 import tennisPic from '../../assets/tenis-card.jpeg'
 import padelPic from '../../assets/padel-card.jpeg'
+import PreviewModal from '../../components/PreviewModal';
 
 
 const sportPreview = [
@@ -32,6 +33,7 @@ const sportPreview = [
 ]
 
 function SportPreview() {
+    const [openPreviewModal, setOpenPreviewModal] = useState(false);
 
     useEffect(() => {
     const cards = document.querySelectorAll(".prev-card");
@@ -51,6 +53,14 @@ function SportPreview() {
 
     cards.forEach((card) => observer.observe(card));
     }, []);
+
+    const handleOpenPreview = () =>{
+        setOpenPreviewModal(true)
+    }
+
+    const closePreview = () =>{
+        setOpenPreviewModal(!openPreviewModal)
+    }
 
     
   return (
@@ -81,11 +91,19 @@ function SportPreview() {
                     </section>
 
                     <section className='sport-btn'>
-                        <button>Book Now <IoChevronForward/></button>
+                        <button onClick={handleOpenPreview}>Book Now <IoChevronForward/></button>
                     </section>
                 </main>
             ))}
         </div>
+
+        {/* preview modal */}
+        {openPreviewModal && (
+            <PreviewModal
+                isOpen={handleOpenPreview}
+                onClose={closePreview}
+            />
+        )}
 
     </div>
   )

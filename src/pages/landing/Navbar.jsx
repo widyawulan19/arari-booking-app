@@ -2,9 +2,19 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo3.png";
 import '../../styles/Landing/navbar.css'
+import PreviewModal from "../../components/PreviewModal";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [previewModal, setPreviewModal] = useState(false);
+
+  const handleOpenPreviewModal = () =>{
+    setPreviewModal(true)
+  }
+
+  const closePreviewModal = () =>{
+    setPreviewModal(!previewModal)
+  }
 
   return (
     <header className="navbar">
@@ -26,9 +36,9 @@ const Navbar = () => {
 
         {/* RIGHT MENU */}
         <div className="nav-right">
-          <Link to="/login" className="btn-text">Login</Link>
-          <Link to="/register" className="btn-outline">Join Member</Link>
-          <Link to="/courts" className="btn-primary">Booking</Link>
+          <Link className="btn-text" onClick={handleOpenPreviewModal}>Login</Link>
+          <Link onClick={handleOpenPreviewModal} className="btn-outline">Join Member</Link>
+          <Link onClick={handleOpenPreviewModal} className="btn-primary">Booking</Link>
 
           {/* HAMBURGER */}
           <div
@@ -53,7 +63,16 @@ const Navbar = () => {
           <Link to="/courts" className="mobile-booking">Booking</Link>
         </div>
       )}
+
+      {/* MODAL  */}
+      {previewModal &&(
+        <PreviewModal
+          onClose={closePreviewModal}
+          isOpen={handleOpenPreviewModal}
+        />
+      )}
     </header>
+
   );
 };
 
