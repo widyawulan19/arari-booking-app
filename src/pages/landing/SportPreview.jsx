@@ -72,7 +72,7 @@ function SportPreview() {
                     Pilih olahraga favorit Anda dan telusuri lapangan yang tersedia di area Anda. Semua fasilitas telah diverifikasi dan berstandar profesional.
                 </p>
                 <button>
-                    View All Sport <IoChevronForward/>
+                    View Sport <IoChevronForward/>
                 </button>
             </div>
         </header>

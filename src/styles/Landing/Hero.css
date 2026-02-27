@@ -52,6 +52,7 @@
 SEARCH HERO
 ======================= */
 .search-hero {
+    /* border: 1px solid red; */
     border: 1px solid var(--divider);
     border-radius: 8px;
     background-color: var(--bg-section-white);
@@ -82,7 +83,7 @@ SEARCH HERO
 }
 
 .hero-search-btn {
-    width: 100%;
+    width: 50%;
     border: 1px solid var(--primary);
     gap: 10px !important;
     font-size: 15px;
@@ -112,7 +113,7 @@ DROPDOWN
 .custom-select {
     cursor: pointer;
     padding: 7px;
-    min-width: 180px;
+    /* border: 1px solid blue; */
 }
 
 .dropdown-list {
@@ -149,7 +150,7 @@ DATE
     outline: none;
     padding: 7px;
     font-size: 15px;
-    min-width: 160px;
+
     background: transparent;
     cursor: pointer;
 }
@@ -163,7 +164,6 @@ DATE
 }
 
 .custom-date-picker::placeholder {
-
     color: #5e5e5e;
 }
 
@@ -187,23 +187,32 @@ DATE
 
     .search-hero {
         width: 90%;
-        padding: 8px 10px;
+        flex-direction: column;
+        /* penting */
+        align-items: stretch;
+        padding: 12px;
+        gap: 10px;
     }
 
     .search-hero .location,
     .search-hero .date {
-        width: 80%;
+        width: 100%;
+        padding: 12px;
     }
 
     .hero-search-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        font-size: 20px;
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
     }
 
     .hero-search-btn p {
         display: none;
+    }
+
+    /* dropdown supaya tidak keluar container */
+    .dropdown-list {
+        width: 100%;
+        left: 0;
     }
 }

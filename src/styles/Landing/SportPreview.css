@@ -221,10 +221,11 @@ MEDIA QUERY
 @media (max-width:650px) {
     .sport-preview-container {
         height: 100%;
+        padding: 30px 10px;
     }
 
     .sub-header p {
-        width: 70%;
+        width: 60%;
     }
 
     .prev-body {
