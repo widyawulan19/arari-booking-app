@@ -185,6 +185,14 @@ DATE
 
 @media (max-width:650px) {
 
+    .hero-text h2 {
+        font-size: 38px;
+    }
+
+    .hero-text h5 {
+        font-size: 15px;
+    }
+
     .search-hero {
         width: 90%;
         flex-direction: column;
