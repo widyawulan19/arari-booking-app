@@ -1,15 +1,14 @@
 import { Link, useNavigate } from "react-router-dom";
 import '../styles/components/CourtPreviewModal.css'
-import { LuCalendar, LuCaptions, LuClock, LuWind } from "react-icons/lu";
+import { LuClock, LuWind } from "react-icons/lu";
 import { formatDate } from "./FormatDate";
 import badmintonImg from '../assets/badminton-court.jpeg';
 import tenisImg from '../assets/tenis-card.jpeg';
 import padelImg from '../assets/padel-card.jpeg'
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { FiAlertCircle } from "react-icons/fi";
-import { IoCalendarClear, IoClose, IoCloseCircle, IoCloseCircleOutline, IoCloseOutline, IoFlash } from "react-icons/io5";
-import { useEffect, useState } from "react";
-import Court from "../pages/users/Court";
+import { IoCalendarClear, IoCloseCircleOutline, IoFlash } from "react-icons/io5";
+import { useEffect } from "react";
 
 const CourtPreviewModal = ({ open, onClose, courts,date, sportName }) => {
 

@@ -3,8 +3,7 @@ import { generateSlots } from "../../api/bookingData.api";
 import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../landing/Navbar";
 import '../../styles/users/SlotsCourt.css';
-import { IoCalendar, IoCheckmarkCircleOutline, IoChevronBackOutline, IoLocationSharp } from "react-icons/io5";
-import { IoIosInformationCircleOutline } from "react-icons/io";
+import { IoCalendar,  IoChevronBackOutline, IoLocationSharp } from "react-icons/io5";
 import { formatDate } from "../../components/FormatDate";
 import { FaCircle, FaRegCircle } from "react-icons/fa6";
 import { MdInfo } from "react-icons/md";
@@ -196,7 +195,7 @@ const Court = () => {
             </div>
             </div>
           </div>
-          
+
         </div>
         
       </div>

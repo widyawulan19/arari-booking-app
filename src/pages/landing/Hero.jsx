@@ -8,10 +8,7 @@ import { FiSearch } from "react-icons/fi";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-import { getAvailabilityCourts } from '../../api/availability.api';
 import CourtPreviewModal from '../../components/CourtPreviewModal';
-import { getCourtBySportAndDate } from '../../services/DummyServices';
-import { getCourtsBySportAPI } from '../../api/courts.api';
 import { getAvailabilityCourtsAPI, getSports } from '../../api/bookingData.api';
 
 const Hero = () => {

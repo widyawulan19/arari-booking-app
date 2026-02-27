@@ -12,8 +12,9 @@ const Navbar = () => {
 
         {/* LEFT MENU (DESKTOP) */}
         <div className="nav-left">
-          <Link to="/schedule">Jadwal</Link>
-          <Link to="/pricing">Harga</Link>
+          {/* <Link to="/schedule">Jadwal</Link>
+          <Link to="/pricing">Harga</Link> */}
+          <Link>Arari Sport</Link>
         </div>
 
         {/* LOGO */}
@@ -26,7 +27,7 @@ const Navbar = () => {
         {/* RIGHT MENU */}
         <div className="nav-right">
           <Link to="/login" className="btn-text">Login</Link>
-          <Link to="/register" className="btn-outline">Daftar</Link>
+          <Link to="/register" className="btn-outline">Join Member</Link>
           <Link to="/courts" className="btn-primary">Booking</Link>
 
           {/* HAMBURGER */}
