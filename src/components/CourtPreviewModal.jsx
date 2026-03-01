@@ -81,9 +81,9 @@ const CourtPreviewModal = ({ open, onClose, courts,date, sportName }) => {
                 <IoCloseCircleOutline onClick={onClose} className="close-modal"/>
               </div>
               <div className="text-header">
-                <p>Select a court to see specific hourly slots</p>
+                <p className="text-text">Select a court to see specific hourly slots</p>
                 <div className="date">
-                  <IoCalendarClear/>
+                  {/* <IoCalendarClear/> */}
                   <p>{formatDate(date)}</p>
                 </div>
               </div>
