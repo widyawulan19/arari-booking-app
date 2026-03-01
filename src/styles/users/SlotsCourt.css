@@ -212,12 +212,17 @@ BOOKED POLICY
 .booked-policy .policy-icon {
     font-size: 20px;
     color: var(--primary);
-    width: 10%;
+
 }
 
 .policy-text h4 {
     font-weight: 600;
     font-size: 12px;
+    gap: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .policy-text p {
@@ -502,4 +507,29 @@ MEDIA QUERY
         font-size: 10px;
         gap: 3px;
     }
+}
+
+@media (max-width:450px) {
+    .slot-info {
+        /* border: 1px solid green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .info-left {
+        width: 100%;
+    }
+
+    .info-right {
+        justify-content: center;
+        width: 80%;
+    }
+
+    .booked-policy {
+        width: 100%;
+    }
+
 }

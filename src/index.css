@@ -24,7 +24,24 @@ code {
 h1,
 h2,
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  /* biar lebih modern */
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+p {
+  line-height: 1.7;
 }
 
 

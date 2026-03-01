@@ -8,11 +8,13 @@ import { formatDate } from "../../components/FormatDate";
 import { FaCircle, FaRegCircle } from "react-icons/fa6";
 import { MdInfo } from "react-icons/md";
 import { LuClock } from "react-icons/lu";
+import PreviewModal from "../../components/PreviewModal";
 
 const Court = () => {
 
   const location = useLocation();
   const navigate = useNavigate()
+  const [previewModal, setPreviewModal] = useState(false);
 
   const court = location.state?.court;
   const selectedDate = location.state?.selectedDate;
@@ -40,6 +42,14 @@ const Court = () => {
     if(!price) return 0;
 
     return new Intl.NumberFormat("id-ID").format(price)
+  }
+
+    const handleOpenPreviewModal = () =>{
+    setPreviewModal(true)
+  }
+
+  const closePreviewModal = () =>{
+    setPreviewModal(!previewModal)
   }
 
   const navigateToHome = () =>{
@@ -112,9 +122,9 @@ const Court = () => {
             </div>
 
             <div className="booked-policy">
-              <MdInfo className="policy-icon"/>
+              
               <div className="policy-text">
-                <h4>Booking Policy</h4>
+                <h4> <MdInfo className="policy-icon"/>Booking Policy</h4>
                 <p
                   >Bookings can be cancelled up to 24 hours before the scheduled time for a full refund. Please ensure you arrive 10 minutes before your slot. Gear rentals are available at the front desk.
                 </p>
@@ -185,7 +195,7 @@ const Court = () => {
               </div>
 
               <div className="info-submit">
-                <button disabled={selectedSlot.length === 0}>Continue to Booking</button>
+                <button  onClick={handleOpenPreviewModal}>Continue to Booking</button>
               </div>
 
               <div className="text-submit">
@@ -199,6 +209,14 @@ const Court = () => {
         </div>
         
       </div>
+
+      {/* MODAL  */}
+      {previewModal && (
+        <PreviewModal
+          onClose={closePreviewModal}
+          isOpen={handleOpenPreviewModal}
+        />
+      )}
     </div>
   );
 };
